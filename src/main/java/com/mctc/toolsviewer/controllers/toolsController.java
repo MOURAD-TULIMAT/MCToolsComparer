@@ -12,7 +12,7 @@ import com.mctc.toolsviewer.models.Tool;
 
 @Controller
 @RequestMapping("/tools")
-public class controller {
+public class toolsController {
     private static final List<Tool> tools = new ArrayList<>();
     static
     {
