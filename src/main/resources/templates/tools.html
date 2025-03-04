@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>MineCraft Tools Comparer</title>
+</head>
+<body>
+    <table>
+        <tr >
+            <th>/</th>
+            <th th:each="tool:${tools}">| <span th:text="${tool.getName()}">axe</span></th>
+        </tr>
+        <tr >
+            <th>Attack Speed</th>
+            <td th:each="tool:${tools}">| <span th:text="${tool.getAttacSpeed()}">axe</span></th>
+        </tr>
+        <tr >
+            <th>Demage</th>
+            <td th:each="tool:${tools}">| <span th:text="${tool.getDemage()}">axe</span></th>
+        </tr>
+    </table>
+
+</body>
+
+</html>
